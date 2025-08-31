@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#overlay {
+  padding: 30px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+#back_button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#story_box {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card_title {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+#card_description {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#options_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* 🔽 Reduced from 30px */
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 40vh;
+}
+
+.option-card {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 360px; /* 🔼 Increased from 300px */
+  height: 240px;     /* 🔼 Increased from 200px */
+  margin: 0 auto;
+}
+
+.option-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.option-card.flipped .option-inner {
+  transform: rotateY(180deg);
+}
+
+.option-front,
+.option-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertikal zentriert */
+  align-items: center;     /* horizontal zentriert */
+  text-align: center;
+}
+
+
+.option-back {
+  transform: rotateY(180deg);
+}
+
+.option_text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.requirements, .result_values {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.req, .change {
+  font-weight: bold;
+}
+
+.strength { color: #c62828; }
+.intelligence { color: #1565c0; }
+.charme { color: #fbc02d; }

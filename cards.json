@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "title": "Überfall",
+    "description": "Du betritts den finsteren Wald und wirst von einer Gruppe Räuber angegriffen.",
+    "image": "images/card1.png",
+    "options": [
+      {
+        "text": "Nichts tun",
+        "values": [0, 0, 0],
+        "result": "Du bleibst stehen und wirst ausgeraubt.",
+        "changes": [-2, 0, -1]
+      },
+      {
+        "text": "Verteidigen",
+        "values": [8, 0, 0],
+        "result": "Du konntest die Räuber erfolgreich abwehren!",
+        "changes": [2, 0, -1]
+      },
+      {
+        "text": "Durch Unterhaltung ablenken",
+        "values": [0, 6, 6],
+        "result": "Die Räuber lachen und lassen dich ziehen.",
+        "changes": [0, 1, 2]
+      },
+      {
+        "text": "Weglaufen",
+        "values": [3, 1, 0],
+        "result": "Du entkommst knapp, verlierst aber etwas.",
+        "changes": [-1, 0, -2]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Verlorene Karte",
+    "description": "Du findest eine mysteriöse Karte mit einem X darauf.",
+    "image": "images/card2.png",
+    "options": [
+      {
+        "text": "Ignorieren",
+        "values": [0, 0, 0],
+        "result": "Du gehst weiter, nichts passiert.",
+        "changes": [0, 0, 0]
+      },
+      {
+        "text": "Folgen",
+        "values": [2, 4, 1],
+        "result": "Du findest eine kleine Schatztruhe.",
+        "changes": [1, 2, 0]
+      },
+      {
+        "text": "Karte verkaufen",
+        "values": [0, 2, 3],
+        "result": "Ein Händler zahlt dir gutes Geld.",
+        "changes": [0, 1, 2]
+      },
+      {
+        "text": "Verbrennen",
+        "values": [1, 0, 0],
+        "result": "Ein seltsamer Rauch steigt auf. Du fühlst dich schwächer.",
+        "changes": [-1, 0, 0]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Alte Bibliothek",
+    "description": "Du entdeckst eine verlassene Bibliothek voller staubiger Bücher.",
+    "image": "images/card3.png",
+    "options": [
+      {
+        "text": "Lesen",
+        "values": [0, 5, 0],
+        "result": "Du lernst neue Zauberformeln.",
+        "changes": [0, 3, 0]
+      },
+      {
+        "text": "Plündern",
+        "values": [3, 0, 0],
+        "result": "Du findest ein paar wertvolle Gegenstände.",
+        "changes": [1, 0, -1]
+      },
+      {
+        "text": "Restaurieren",
+        "values": [0, 6, 2],
+        "result": "Die Bibliothek wird wieder nutzbar.",
+        "changes": [0, 2, 1]
+      },
+      {
+        "text": "Ignorieren",
+        "values": [0, 0, 0],
+        "result": "Du verlässt den Ort unverändert.",
+        "changes": [0, 0, 0]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Markttag",
+    "description": "Der Dorfplatz ist voller Händler und neugieriger Besucher.",
+    "image": "images/card4.png",
+    "options": [
+      {
+        "text": "Feilschen",
+        "values": [0, 2, 5],
+        "result": "Du bekommst ein gutes Angebot.",
+        "changes": [0, 1, 2]
+      },
+      {
+        "text": "Stehlen",
+        "values": [4, 0, 0],
+        "result": "Du wirst erwischt und musst fliehen.",
+        "changes": [-2, 0, -1]
+      },
+      {
+        "text": "Musizieren",
+        "values": [0, 0, 6],
+        "result": "Die Menge applaudiert dir.",
+        "changes": [0, 0, 3]
+      },
+      {
+        "text": "Beobachten",
+        "values": [0, 3, 0],
+        "result": "Du lernst viel über die Leute.",
+        "changes": [0, 2, 0]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Verfluchter Brunnen",
+    "description": "Ein alter Brunnen flüstert dir seltsame Worte zu.",
+    "image": "images/card5.png",
+    "options": [
+      {
+        "text": "Trinken",
+        "values": [2, 2, 0],
+        "result": "Du fühlst dich verändert.",
+        "changes": [1, -1, 0]
+      },
+      {
+        "text": "Segnen",
+        "values": [0, 5, 0],
+        "result": "Der Fluch wird gebrochen.",
+        "changes": [0, 2, 1]
+      },
+      {
+        "text": "Zerstören",
+        "values": [6, 0, 0],
+        "result": "Der Brunnen explodiert.",
+        "changes": [2, 0, -2]
+      },
+      {
+        "text": "Ignorieren",
+        "values": [0, 0, 0],
+        "result": "Du gehst weiter.",
+        "changes": [0, 0, 0]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Verlassene Hütte",
+    "description": "Du findest eine Hütte im Wald, scheinbar leer.",
+    "image": "images/card6.png",
+    "options": [
+      {
+        "text": "Untersuchen",
+        "values": [2, 3, 0],
+        "result": "Du findest ein Tagebuch mit Hinweisen.",
+        "changes": [0, 2, 0]
+      },
+      {
+        "text": "Übernachten",
+        "values": [0, 0, 0],
+        "result": "Du schläfst gut und fühlst dich erholt.",
+        "changes": [1, 0, 0]
+      },
+      {
+        "text": "Plündern",
+        "values": [3, 0, 0],
+        "result": "Du findest Vorräte.",
+        "changes": [1, 0, -1]
+      },
+      {
+        "text": "Verbrennen",
+        "values": [5, 0, 0],
+        "result": "Die Hütte geht in Flammen auf.",
+        "changes": [2, 0, -2]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Geheimes Ritual",
+    "description": "Du wirst zu einem nächtlichen Ritual eingeladen.",
+    "image": "images/card7.png",
+    "options": [
+      {
+        "text": "Teilnehmen",
+        "values": [0, 6, 2],
+        "result": "Du erhältst eine mystische Gabe.",
+        "changes": [0, 3, 1]
+      },
+      {
+        "text": "Ablehnen",
+        "values": [0, 0, 0],
+        "result": "Du bleibst außen vor.",
+        "changes": [0, 0, 0]
+      },
+      {
+        "text": "Stören",
+        "values": [5, 0, 0],
+        "result": "Du wirst verflucht.",
+        "changes": [-2, -2, -2]
+      },
+      {
+        "text": "Beobachten",
+        "values": [0, 4, 0],
+        "result": "Du lernst etwas über alte Magie.",
+        "changes": [0, 2, 0]
+      }
+    ]
+  }
+]

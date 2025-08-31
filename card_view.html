@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Ereignis</title>
+  <link rel="stylesheet" href="css/card_view.css">
+</head>
+<body>
+  <a href="index.html" id="back_button">← Zurück zur Übersicht</a>
+
+  <div id="overlay">
+    <div id="story_box">
+      <h1 id="card_title">Titel</h1>
+      <p id="card_description">Beschreibung</p>
+    </div>
+
+    <div id="options_container">
+    </div>
+  </div>
+
+  <script>
+  function formatChange(val) {
+    return val > 0 ? `+${val}` : `${val}`;
+  }
+
+  function setBackgroundImage(url, fallback) {
+  const img = new Image();
+  img.onload = () => {
+    document.body.style.backgroundImage = `url(${url})`;
+  };
+  img.onerror = () => {
+    document.body.style.backgroundImage = `url(${fallback})`;
+  };
+  img.src = url;
+}
+
+
+  async function loadCard() {
+    const params = new URLSearchParams(window.location.search);
+    const cardId = parseInt(params.get("id"));
+
+    const response = await fetch("cards.json");
+    const cards = await response.json();
+    const card = cards.find(c => c.id === cardId);
+
+    setBackgroundImage(card.image, "images/backup.png");
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+
+    document.getElementById("card_title").innerText = card.title;
+    document.getElementById("card_description").innerText = card.description;
+
+    const container = document.getElementById("options_container");
+    container.innerHTML = "";
+
+    card.options.forEach(opt => {
+      const cardDiv = document.createElement("div");
+      cardDiv.className = "option-card";
+
+      const innerDiv = document.createElement("div");
+      innerDiv.className = "option-inner";
+
+      const front = document.createElement("div");
+      front.className = "option-front";
+      front.innerHTML = `
+        <p class="option_text">${opt.text}</p>
+        <div class="requirements">
+          <span class="req strength">💪 ${opt.values[0]}</span>
+          <span class="req intelligence">🧠 ${opt.values[1]}</span>
+          <span class="req charme">😎 ${opt.values[2]}</span>
+        </div>
+      `;
+
+      const back = document.createElement("div");
+      back.className = "option-back";
+      back.innerHTML = `
+        <p class="result_text">${opt.result}</p>
+        <div class="result_values">
+          <span class="change strength">💪 ${formatChange(opt.changes[0])}</span>
+          <span class="change intelligence">🧠 ${formatChange(opt.changes[1])}</span>
+          <span class="change charme">😎 ${formatChange(opt.changes[2])}</span>
+        </div>
+      `;
+
+      innerDiv.appendChild(front);
+      innerDiv.appendChild(back);
+      cardDiv.appendChild(innerDiv);
+
+      cardDiv.addEventListener("click", () => {
+        cardDiv.classList.toggle("flipped");
+      });
+
+      container.appendChild(cardDiv);
+    });
+  }
+
+  loadCard();
+</script>
+
+</body>
+</html>
