@@ -1,131 +1,160 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #000;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#overlay {
-  padding: 30px;
-  width: 100%;
-  max-width: 1000px;
-  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 #back_button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  background-color: #1976d2;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
   text-decoration: none;
-  z-index: 1000;
+  color: #fff;
+  font-size: 1.2em;
+  background: rgba(0,0,0,0.5);
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 10;
 }
 
-#story_box {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 25px;
-  max-width: 800px;
-  margin: 0 auto 30px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  text-align: center;
+#overlay {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+#story_box {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #card_title {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 #card_description {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #options_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* 🔽 Reduced from 30px */
-  max-width: 800px;
-  margin: 0 auto;
-  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
+/* Kartenstruktur */
 .option-card {
+  width: 280px;
+  height: 360px;
   perspective: 1000px;
-  width: 100%;
-  max-width: 360px; /* 🔼 Increased from 300px */
-  height: 240px;     /* 🔼 Increased from 200px */
-  margin: 0 auto;
+  cursor: pointer;
 }
 
 .option-inner {
-  position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  position: relative;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
 
+/* Flip nach rechts (positiv) */
 .option-card.flipped .option-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Flip nach links (negativ) */
+.option-card.flipped-negative .option-inner {
   transform: rotateY(180deg);
 }
 
-.option-front,
-.option-back {
+.option-front, .option-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: white;
-  border: 2px solid #333;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertikal zentriert */
-  align-items: center;     /* horizontal zentriert */
-  text-align: center;
+  justify-content: space-between;
 }
 
-
+/* Rückseite */
 .option-back {
   transform: rotateY(180deg);
 }
 
+/* Text */
 .option_text {
-  font-size: 1.5rem;
+  font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 12px;
 }
 
-.requirements, .result_values {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  font-size: 1.4rem;
+.option_description {
+  font-size: 1em;
   margin-top: 10px;
 }
 
-.req, .change {
-  font-weight: bold;
+/* Anforderungen & Ergebnisse */
+.requirements, .result_values {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.strength { color: #c62828; }
-.intelligence { color: #1565c0; }
-.charme { color: #fbc02d; }
+.req, .change {
+  background: rgba(0,0,0,0.4);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+/* Ecken */
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 0 0 8px;
+  z-index: 5;
+}
+
+.corner.red {
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.corner.green {
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+/* Responsive Basis */
+@media (max-width: 768px) {
+  #card_title {
+    font-size: 2em;
+  }
+
+  .option-card {
+    width: 90%;
+    height: 340px;
+  }
+}

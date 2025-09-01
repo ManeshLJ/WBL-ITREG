@@ -1,225 +1,163 @@
 [
   {
     "id": 1,
-    "title": "Überfall",
-    "description": "Du betritts den finsteren Wald und wirst von einer Gruppe Räuber angegriffen.",
-    "image": "images/card1.png",
+    "title": "Wald",
+    "overviewImage": "images/card1_overview.png",
+    "image": "images/card1_detail.png",
+    "description": "Du betrittst den Wald. Die Dunkelheit schließt sich langsam um dich mit jedem Meter, den du tiefer eindringst. Plötzlich springt eine Bande Söldner aus dem Unterholz und umzingelt dich. Du wirst überfallen.",
     "options": [
       {
-        "text": "Nichts tun",
-        "values": [0, 0, 0],
-        "result": "Du bleibst stehen und wirst ausgeraubt.",
-        "changes": [-2, 0, -1]
-      },
-      {
-        "text": "Verteidigen",
-        "values": [8, 0, 0],
-        "result": "Du konntest die Räuber erfolgreich abwehren!",
-        "changes": [2, 0, -1]
-      },
-      {
-        "text": "Durch Unterhaltung ablenken",
-        "values": [0, 6, 6],
-        "result": "Die Räuber lachen und lassen dich ziehen.",
-        "changes": [0, 1, 2]
-      },
-      {
-        "text": "Weglaufen",
-        "values": [3, 1, 0],
-        "result": "Du entkommst knapp, verlierst aber etwas.",
-        "changes": [-1, 0, -2]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Verlorene Karte",
-    "description": "Du findest eine mysteriöse Karte mit einem X darauf.",
-    "image": "images/card2.png",
-    "options": [
-      {
-        "text": "Ignorieren",
-        "values": [0, 0, 0],
-        "result": "Du gehst weiter, nichts passiert.",
-        "changes": [0, 0, 0]
-      },
-      {
-        "text": "Folgen",
-        "values": [2, 4, 1],
-        "result": "Du findest eine kleine Schatztruhe.",
-        "changes": [1, 2, 0]
-      },
-      {
-        "text": "Karte verkaufen",
-        "values": [0, 2, 3],
-        "result": "Ein Händler zahlt dir gutes Geld.",
-        "changes": [0, 1, 2]
-      },
-      {
-        "text": "Verbrennen",
-        "values": [1, 0, 0],
-        "result": "Ein seltsamer Rauch steigt auf. Du fühlst dich schwächer.",
-        "changes": [-1, 0, 0]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Alte Bibliothek",
-    "description": "Du entdeckst eine verlassene Bibliothek voller staubiger Bücher.",
-    "image": "images/card3.png",
-    "options": [
-      {
-        "text": "Lesen",
-        "values": [0, 5, 0],
-        "result": "Du lernst neue Zauberformeln.",
-        "changes": [0, 3, 0]
-      },
-      {
-        "text": "Plündern",
-        "values": [3, 0, 0],
-        "result": "Du findest ein paar wertvolle Gegenstände.",
-        "changes": [1, 0, -1]
-      },
-      {
-        "text": "Restaurieren",
-        "values": [0, 6, 2],
-        "result": "Die Bibliothek wird wieder nutzbar.",
-        "changes": [0, 2, 1]
-      },
-      {
-        "text": "Ignorieren",
-        "values": [0, 0, 0],
-        "result": "Du verlässt den Ort unverändert.",
-        "changes": [0, 0, 0]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Markttag",
-    "description": "Der Dorfplatz ist voller Händler und neugieriger Besucher.",
-    "image": "images/card4.png",
-    "options": [
-      {
-        "text": "Feilschen",
-        "values": [0, 2, 5],
-        "result": "Du bekommst ein gutes Angebot.",
-        "changes": [0, 1, 2]
-      },
-      {
-        "text": "Stehlen",
-        "values": [4, 0, 0],
-        "result": "Du wirst erwischt und musst fliehen.",
-        "changes": [-2, 0, -1]
-      },
-      {
-        "text": "Musizieren",
-        "values": [0, 0, 6],
-        "result": "Die Menge applaudiert dir.",
-        "changes": [0, 0, 3]
-      },
-      {
-        "text": "Beobachten",
-        "values": [0, 3, 0],
-        "result": "Du lernst viel über die Leute.",
-        "changes": [0, 2, 0]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Verfluchter Brunnen",
-    "description": "Ein alter Brunnen flüstert dir seltsame Worte zu.",
-    "image": "images/card5.png",
-    "options": [
-      {
-        "text": "Trinken",
-        "values": [2, 2, 0],
-        "result": "Du fühlst dich verändert.",
-        "changes": [1, -1, 0]
-      },
-      {
-        "text": "Segnen",
-        "values": [0, 5, 0],
-        "result": "Der Fluch wird gebrochen.",
-        "changes": [0, 2, 1]
-      },
-      {
-        "text": "Zerstören",
+        "text": "Gegen die Söldner kämpfen",
+        "description": "Einer gegen ein Dutzend - bist du stark genug?",
         "values": [6, 0, 0],
-        "result": "Der Brunnen explodiert.",
-        "changes": [2, 0, -2]
+        "cost": 0,
+        "positive": {
+          "result": "Nachdem du zwei Ängreifer schwer verletzt hast, fliehen die anderen. Den Gefallenen nimmst du ihre Münzen ab.",
+          "description": "Du verlässt den Wald gestärkt und reicher.",
+          "changes": [2, 0, 0],
+          "moneyChange": 16
+        },
+        "negative": {
+          "result": "Nach wenigen Sekunden liegst du am Boden, sie treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
+          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "changes": [-1, 0, 0],
+          "moneyChange": -20
+        }
       },
       {
-        "text": "Ignorieren",
-        "values": [0, 0, 0],
-        "result": "Du gehst weiter.",
-        "changes": [0, 0, 0]
+        "text": "Einen Teil deiner Münzen freiwillig abgeben",
+        "description": "Solange du etwas gibst, lassen sie dich vielleicht gehen.",
+        "values": [0, 2, 4],
+        "cost": 10,
+        "positive": {
+          "result": "Sie freuen sich, dass sie für ihren Lohn heute nicht kämpfen müssen, und lassen dich gehen.",
+          "description": "Du verlässt den Wald etwas ärmer, aber unversehrt.",
+          "changes": [0, 1, 1],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Sie greifen dich trotzdem an. Nach wenigen Sekunden liegst du am Boden, sie treten auf dich ein bis weitere Müzen aus deine Taschen fallen.",
+          "description": "Du bleibst dort liegen, wo du bist, geschwächt und deutlich ärmer.",
+          "changes": [-1, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Wegrennen",
+        "description": "Du bist noch nicht weit vom Waldrand entfernt. Vielleicht schaffst du es.",
+        "values": [4, 2, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Durch deine Stärke und cleveren Manöver schaffst du es, die Söldner abzuschütteln.",
+          "description": "Du verlässt den Wald dort wo du ihn betreten hast, unverletzt.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Sie holen dich ein und werfen dich zu Boden. Sie treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
+          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "changes": [-1, 0, 0],
+          "moneyChange": -20
+        }
+      },
+      {
+        "text": "Mit Söldnern anfreunden",
+        "description": "Hier draußen ist es einsam. Ein bisschen abwechslungsreiche Gesellschaft könnte ihnen gefallen.",
+        "values": [0, 0, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Zwei Stunden später sitzt du betrunken mit den Söldnern am Lagerfeuer, hörst Musik und lachst.",
+          "description": "Am nächsten Morgen verlässt du den Wald. Scheinbar hat dir jemand über Nacht ein paar Münzen geklaut.",
+          "changes": [0, 0, 2],
+          "moneyChange": -5
+        },
+        "negative": {
+          "result": "Sie lachen über dich nicht mit dir, nachdem du das Gespräch mit einem gewagtem Witz eröffnen wolltest. Sie werfen dich zu Boden und treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
+          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -20
+        }
       }
     ]
   },
-  {
-    "id": 6,
-    "title": "Verlassene Hütte",
-    "description": "Du findest eine Hütte im Wald, scheinbar leer.",
-    "image": "images/card6.png",
+{
+    "id": 2,
+    "title": "Fährhafen",
+    "overviewImage": "images/card2_overview.png",
+    "image": "images/card2_detail.png",
+    "description": "Du erreichst den Fährhafen nördlich der Hafenstadt.",
     "options": [
       {
-        "text": "Untersuchen",
-        "values": [2, 3, 0],
-        "result": "Du findest ein Tagebuch mit Hinweisen.",
-        "changes": [0, 2, 0]
-      },
-      {
-        "text": "Übernachten",
+        "text": "Für Mitfahrt auf einer Fähre flussaufwärts bezahlen",
+        "description": "Eine teurer Angelegenheit",
         "values": [0, 0, 0],
-        "result": "Du schläfst gut und fühlst dich erholt.",
-        "changes": [1, 0, 0]
+        "cost": 80,
+        "positive": {
+          "result": "Nachdem du ein hübsches Sümmchen bezahlt hast, wirst du auf eine Fähre gebracht, die dich flussaufwärts bringt.",
+          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "changes": [0, 0, 0],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Nachdem du ein hübsches Sümmchen bezahlt hast, wirst du auf eine Fähre gebracht, die dich flussaufwärts bringt.",
+          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "changes": [0, 0, 0],
+          "moneyChange": -80
+        }
       },
       {
-        "text": "Plündern",
+        "text": "Heimlich auf eine Fähre schleichen",
+        "description": "Warum bezahlen, wenn es auch umsonst geht?",
+        "values": [0, 8, 8],
+        "cost": 0,
+        "positive": {
+          "result": "Du versteckst dich zwischen in einem Fass voller Fische. Der Geruch stört, aber du wirst nicht entdeckt.",
+          "description": "Nach einer geruchsintensiven eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Du versteckst dich hinter einem Fass voller Fische. Nach wenigen Minuten Fahrt wirst du erwischt und von der Fähre geworfen.",
+          "description": "Du wirst in der Hafenstadt wieder angespült, geschwächt und durchnässt.",
+          "changes": [-1, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Eine eigene Fähre bauen und flussaufwärts fahren",
+        "description": "Wenn die Hafenarbeiter es können, warum nicht auch du?",
+        "values": [2, 2, 0],
+        "cost": 20,
+        "positive": {
+          "result": "Du schaffst es eine fahrende, wenn auch etwas wackeligen Fähre zu bauen.",
+          "description": "Nach einer anstrengende zweitägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "changes": [2, 1, 0],
+          "moneyChange": -20
+        },
+        "negative": {
+          "result": "Du schaffst es eine fahrende, wenn auch etwas wackeligen Fähre zu bauen.",
+          "description": "Nach einigen Stunden Fahrt kentert deine Fähre. Du wirst in der Hafenstadt wieder angespült, geschwächt und durchnässt.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -20
+        }
+      },
+      {
+        "text": "Im Hafen arbeiten",
+        "description": "An der frischen Luft zu arbeiten wird deiner Gesundheit und deinem Geldbeutel guttun.",
         "values": [3, 0, 0],
-        "result": "Du findest Vorräte.",
-        "changes": [1, 0, -1]
-      },
-      {
-        "text": "Verbrennen",
-        "values": [5, 0, 0],
-        "result": "Die Hütte geht in Flammen auf.",
-        "changes": [2, 0, -2]
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Geheimes Ritual",
-    "description": "Du wirst zu einem nächtlichen Ritual eingeladen.",
-    "image": "images/card7.png",
-    "options": [
-      {
-        "text": "Teilnehmen",
-        "values": [0, 6, 2],
-        "result": "Du erhältst eine mystische Gabe.",
-        "changes": [0, 3, 1]
-      },
-      {
-        "text": "Ablehnen",
-        "values": [0, 0, 0],
-        "result": "Du bleibst außen vor.",
-        "changes": [0, 0, 0]
-      },
-      {
-        "text": "Stören",
-        "values": [5, 0, 0],
-        "result": "Du wirst verflucht.",
-        "changes": [-2, -2, -2]
-      },
-      {
-        "text": "Beobachten",
-        "values": [0, 4, 0],
-        "result": "Du lernst etwas über alte Magie.",
-        "changes": [0, 2, 0]
+        "cost": 0,
+        "positive": {
+          "result": "Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst im Hafen, gestärkt und etwas reicher.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Du bleibst im Hafen, ohne Lohn, aber stärker.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        }
       }
     ]
   }

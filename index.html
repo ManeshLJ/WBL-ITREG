@@ -27,7 +27,7 @@
       cardDiv.className = "card";
 
       const img = document.createElement("img");
-      img.src = card.image || "images/backup.png";
+      img.src = card.overviewImage  || "images/backup.png";
       img.alt = card.title;
       img.onerror = () => {
         img.src = "images/backup.png";
