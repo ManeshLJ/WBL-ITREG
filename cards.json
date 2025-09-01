@@ -130,7 +130,7 @@
         "cost": 20,
         "positive": {
           "result": "Du schaffst es eine fahrende, wenn auch etwas wackeligen Fähre zu bauen.",
-          "description": "Nach einer anstrengende zweitägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "description": "Nach einer anstrengende zweitägigen Fahrt erreichst du den Fährenhafen an der ### Brücke, gestärkt und schlauer.",
           "changes": [2, 1, 0],
           "moneyChange": -20
         },
@@ -144,7 +144,7 @@
       {
         "text": "Im Hafen arbeiten",
         "description": "An der frischen Luft zu arbeiten wird deiner Gesundheit und deinem Geldbeutel guttun.",
-        "values": [3, 0, 0],
+        "values": [8, 0, 0],
         "cost": 0,
         "positive": {
           "result": "Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
@@ -157,6 +157,573 @@
           "description": "Du bleibst im Hafen, ohne Lohn, aber stärker.",
           "changes": [1, 0, 0],
           "moneyChange": 0
+        }
+      }
+    ]
+  },
+{
+    "id": 3,
+    "title": "Siedlung Razerath",
+    "overviewImage": "images/card3_overview.png",
+    "image": "images/card3_detail.png",
+    "description": "Du erreichst den Siedlung Razerath südlich der Ligon Berge. Sie ist bekannt für ihre Mienenarbeiteter, die seit Dekanden die Ligon Berge aushöhlen, während die sie mittels Ballons mit Siedlungen in größeren Höhen Handel treiben.",
+    "options": [
+      {
+        "text": "Eine Ballonfahrt über das Gebirge buchen",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 4,
+    "title": "Agons Brücke",
+    "overviewImage": "images/card4_overview.png",
+    "image": "images/card4_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "Eine Ballonfahrt über das Gebirge buchen",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 5,
+    "title": "Racrans Festung",
+    "overviewImage": "images/card5_overview.png",
+    "image": "images/card5_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "Eine Ballonfahrt über das Gebirge buchen",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 6,
+    "title": "Hafenstadt Südstern",
+    "overviewImage": "images/card6_overview.png",
+    "image": "images/card6_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "TODO",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 7,
+    "title": "Tempel der Erleuchtung",
+    "overviewImage": "images/card7_overview.png",
+    "image": "images/card7_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "TODO",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 8,
+    "title": "Herrenhaus am großen See",
+    "overviewImage": "images/card8_overview.png",
+    "image": "images/card8_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "TODO",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 9,
+    "title": "Azelons Stadt",
+    "overviewImage": "images/card9_overview.png",
+    "image": "images/card9_detail.png",
+    "description": "TODO",
+    "options": [
+      {
+        "text": "TODO",
+        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
+        "values": [0, 0, 2],
+        "cost": 80,
+        "positive": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "changes": [0, 0, 1],
+          "moneyChange": -80
+        },
+        "negative": {
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
+          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
+          "changes": [-1, 0, -1],
+          "moneyChange": -80
+        }
+      },
+      {
+        "text": "Eine Ballonfahrt vor der Abreise überfallen",
+        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
+        "values": [8, 8, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
+          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
+          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Minenarbeiter um Hilfe bitten",
+        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
+        "values": [4, 2, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
+          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
+          "changes": [1, 1, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Im den Minen arbeiten",
+        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
+        "values": [8, 0, 2],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
+          "description": "Du bleibst in der Siedlung Razerath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
+          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
+          "changes": [1, 0, 0],
+          "moneyChange": 5
         }
       }
     ]
