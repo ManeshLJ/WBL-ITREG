@@ -247,78 +247,42 @@
     "title": "Agons Brücke",
     "overviewImage": "images/card4_overview.png",
     "image": "images/card4_detail.png",
-    "description": "TODO",
+    "description": "Viele Neuankömmling in der Graftschaft Itreg überqueren Agons Brücke, um die legendären Festmale in Racrans Festung zu genießen. Vor der Brücke wird Wegzoll von einem Brückenwächter verlangt.",
     "options": [
       {
-        "text": "Eine Ballonfahrt über das Gebirge buchen",
-        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
-        "values": [0, 0, 2],
-        "cost": 80,
+        "text": "Den Wegzoll zahlen und die Brücke langsam überqueren",
+        "description": "Du bist schließlich ein rechtschaffender Reisender.",
+        "values": [2, 0, 0],
+        "cost": 40,
         "positive": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
-          "changes": [0, 0, 1],
-          "moneyChange": -80
+          "result": "Du zahlst den Wegzoll. Trotz der ablenkenden Vorfreude auf Racrans Festung, schaffst du es die Brücke sicher zu überqueren.",
+          "description": "Du verlässt die Brücke Agons gen Westen.",
+          "changes": [1, 0, 0],
+          "moneyChange": -40
         },
         "negative": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
-          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
-          "changes": [-1, 0, -1],
-          "moneyChange": -80
-        }
-      },
-      {
-        "text": "Eine Ballonfahrt vor der Abreise überfallen",
-        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
-        "values": [8, 8, 0],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": 0
-        },
-        "negative": {
-          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
-          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
-          "changes": [-1, 0, 0],
-          "moneyChange": 0
-        }
-      },
-      {
-        "text": "Die Minenarbeiter um Hilfe bitten",
-        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
-        "values": [4, 2, 6],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
-          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": -10
-        },
-        "negative": {
-          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
-          "description": "Du bleibst in der Siedlung Razerath.",
+          "result": "Du zahlst den Wegzoll. Als du etwa die Hälfte der Brücke überquert hast, bricht die Holzplanke, welche dein Gewicht trägt. Du verlierst die Balance und stürzst in die tobenden Strömung unter dir.",
+          "description": "Bei Sonnenaufgang wachst du durchnässt auf einem Tisch im Freien liegend auf. Du befindest dich in West-Zhranorath, dessen Bewohner dich gerettet haben, nachdem dich die Flut landeinwärts trug.",
           "changes": [0, 0, -1],
-          "moneyChange": 0
+          "moneyChange": -40
         }
       },
       {
-        "text": "Im den Minen arbeiten",
-        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
-        "values": [8, 0, 2],
+        "text": "Den Wegzoll nicht bezahlen und schnell über die Brücke rennen",
+        "description": "Solange du schneller als der alte Brückenwächter bist, wird er dich nicht aufhalten können.",
+        "values": [5, 0, 0],
         "cost": 0,
         "positive": {
-          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
-          "description": "Du bleibst in der Siedlung Razerath.",
+          "result": "Du schaffst es mühelos am Brückenwächter vorbei und überquerst die Brücke mit schnellen Schritten.",
+          "description": "Du verlässt die Brücke Agons gestärkt gen Westen.",
           "changes": [1, 0, 0],
-          "moneyChange": 30
+          "moneyChange": 0
         },
         "negative": {
-          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
-          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
-          "changes": [1, 0, 0],
-          "moneyChange": 5
+          "result": "Der Brückenwächter bringt dich zu Boden während du versuchst an ihm vorbeizukommen. Er tritt dich einige Male bis rund der doppelte Wegzoll aus deinen Taschen fällt und lässt dich liegen.",
+          "description": "Du verlässt die Brücke Agons geschwächt und ärmer gen Westen.",
+          "changes": [-1, 0, 0],
+          "moneyChange": -60
         }
       }
     ]
@@ -328,78 +292,78 @@
     "title": "Racrans Festung",
     "overviewImage": "images/card5_overview.png",
     "image": "images/card5_detail.png",
-    "description": "TODO",
+    "description": "Racrans Festung stellt die am besten befestigte Burg in der Graftschaft Itreg dar. Einst war sie ein wichtiger taktischer Stützpunkt, seit Beginn der langen Jahre des Friedens vor 324 Jahren, ist sie vorallem bekannst geworden durch ihrer außergewöhlichen Festmähler, aber auch für Gelehrte ist ihre Bibliothek ein Anziehungspunkt.",
     "options": [
       {
-        "text": "Eine Ballonfahrt über das Gebirge buchen",
-        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
-        "values": [0, 0, 2],
-        "cost": 80,
+        "text": "Festmahl gegen Eintrittsgeld genießen",
+        "description": "Eine teurer Angelegenheit - aber du wolltest schon immer einen solchen Schmaus erleben.",
+        "values": [0, 0, 3],
+        "cost": 40,
         "positive": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
-          "changes": [0, 0, 1],
-          "moneyChange": -80
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Das Essen ist köstlich, die Unterhaltung exzellent und die Gesellschaft anregend.",
+          "description": "Du verlässt Racrans Festung am nächsten Morgen gen Westen mit neu geknüpften Kontakten.",
+          "changes": [0, 0, 2],
+          "moneyChange": -40
         },
         "negative": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
-          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
-          "changes": [-1, 0, -1],
+          "result": "Diese Geldsumme hat sich wirklich gelohnt. Das Essen ist köstlich, die Unterhaltung exzellent, jedoch fühlen sich einige Gäste durch deine Anwesenheit gestört und werfen dich aus der Festung",
+          "description": "Du verlässt Racrans Festung peinlich berührt gen Westen.",
+          "changes": [0, 0, -1],
           "moneyChange": -80
         }
       },
       {
-        "text": "Eine Ballonfahrt vor der Abreise überfallen",
-        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
-        "values": [8, 8, 0],
+        "text": "Türsteher bitten, dich ohne Eintrittsgeld an dem Festmahl teilnehmen zu lassen",
+        "description": "Warum bezahlen, wenn man die Türsteher durch Charme überzeugen kann?",
+        "values": [0, 0, 5],
         "cost": 0,
         "positive": {
-          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
-          "changes": [1, 1, 0],
+          "result": "Du führst eine anregende Unterhaltung mit den Türstehern und schaffst es, sie zu überzeugen, dich ohne Eintrittsgeld an dem Festmahl teilnehmen zu lassen. Das Essen ist köstlich, die Unterhaltung exzellent und die Gesellschaft anregend.",
+          "description": "Du verlässt Racrans Festung am nächsten Morgen gen Westen mit neu geknüpften Kontakten.",
+          "changes": [0, 0, 2],
           "moneyChange": 0
         },
         "negative": {
-          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
-          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
-          "changes": [-1, 0, 0],
-          "moneyChange": 0
-        }
-      },
-      {
-        "text": "Die Minenarbeiter um Hilfe bitten",
-        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
-        "values": [4, 2, 6],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
-          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": -10
-        },
-        "negative": {
-          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
-          "description": "Du bleibst in der Siedlung Razerath.",
+          "result": "Dein Gesprächseinstieg, die Mitte und das Ende versagen allesamt. Die Türsteher lachen dich aus und werfen dich aus der Festung.",
+          "description": "Du verlässt Racrans Festung peinlich berührt gen Westen.",
           "changes": [0, 0, -1],
           "moneyChange": 0
         }
       },
       {
-        "text": "Im den Minen arbeiten",
-        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
-        "values": [8, 0, 2],
+        "text": "Durch den Abortschacht in die Festung gelangen und am Festmahl teilnehmen",
+        "description": "Etwas ekelig, aber besser als zu bezahlen",
+        "values": [5, 0, 0],
         "cost": 0,
         "positive": {
-          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
-          "description": "Du bleibst in der Siedlung Razerath.",
-          "changes": [1, 0, 0],
+          "result": "Du schaffst es in die Burg und nimmst von Urin triefend am Festmahl teil. Das Essen ist köstlich, die Unterhaltung exzellent und die Gesellschaft anregend. Die anderen Gäste stören sich an deinem Geruch so sehr, dass sie dich aus der Burg werfen.",
+          "description": "Du verlässt Racrans Festung peinlich berührt aber gestärkt gen Westen.",
+          "changes": [2, 0, -1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch den Abortschacht hinauf zu klettern, stürzst du ab und landest unsanft auf dem Boden vor der Burg.",
+          "description": "Du verlässt Racrans Festung peinlich berührt und geschwächt gen Westen.",
+          "changes": [-1, 0, -1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Bibliothek besuchen",
+        "description": "Warum nicht dein Wissen in einer der größten Bibliotheken der Graftschaft Itreg erweitern? Die Bibliotheksdiener sind bekannt für ihre strenge Auswahl der Besucher.",
+        "values": [0, 3, 0],
+        "cost": 5,
+        "positive": {
+          "result": "Dein Wissen über Langhornfrösche befriedigt den Bibliotheksdiener, sodass du für ein kleines Entgelt die Bibliothek betreten darfst. Du verbringst den Tag damit, in alten Schriften zu lesen und dein Wissen zu erweitern.",
+          "description": "Du verlässt Racrans Festung am nächsten Morgen schlauer gen Westen.",
+          "changes": [0, 2, 0],
           "moneyChange": 30
         },
         "negative": {
-          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
-          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
-          "changes": [1, 0, 0],
-          "moneyChange": 5
+          "result": "Deine Ausführungen über Hustmäuse langeweilen den Bibliotheksdiener nur, sodass er dir den Zutritt verweigert.",
+          "description": "Du verlässt Racrans Festung peinlich berührt gen Westen.",
+          "changes": [0, 0, -1],
+          "moneyChange": 0
         }
       }
     ]
