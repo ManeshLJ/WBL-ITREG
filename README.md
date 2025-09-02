@@ -11,8 +11,17 @@ Diese Repository enthält nicht das gesamte Spiel. Es wird hauptsächlich analog
 
 ## Notes
 
+### Local Server for testing
+
 py -m http.server 8000
 
 ### Images
 
 pngs 1536x1024
+
+### Generate Instructions
+
+Generate instruction pdf and html
+
+cd WBL-ITREG\instructions
+py Instructions.py
