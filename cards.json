@@ -19,7 +19,7 @@
         },
         "negative": {
           "result": "Nach wenigen Sekunden liegst du am Boden, sie treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
-          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "description": "Du bleibst im Wald liegen, geschwächt und ärmer.",
           "changes": [-1, 0, 0],
           "moneyChange": -20
         }
@@ -37,7 +37,7 @@
         },
         "negative": {
           "result": "Sie greifen dich trotzdem an. Nach wenigen Sekunden liegst du am Boden, sie treten auf dich ein bis weitere Müzen aus deine Taschen fallen.",
-          "description": "Du bleibst dort liegen, wo du bist, geschwächt und deutlich ärmer.",
+          "description": "Du bleibst im Wald liegen, geschwächt und deutlich ärmer.",
           "changes": [-1, 0, 0],
           "moneyChange": -30
         }
@@ -55,7 +55,7 @@
         },
         "negative": {
           "result": "Sie holen dich ein und werfen dich zu Boden. Sie treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
-          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "description": "Du bleibst im Wald liegen, geschwächt und ärmer.",
           "changes": [-1, 0, 0],
           "moneyChange": -20
         }
@@ -73,7 +73,7 @@
         },
         "negative": {
           "result": "Sie lachen über dich nicht mit dir, nachdem du das Gespräch mit einem gewagtem Witz eröffnen wolltest. Sie werfen dich zu Boden und treten auf dich ein bis einige Müzen aus deine Taschen fallen.",
-          "description": "Du bleibst dort liegen, wo du bist, geschwächt und ärmer.",
+          "description": "Du bleibst im Wald liegen, geschwächt und ärmer.",
           "changes": [-1, 0, -1],
           "moneyChange": -20
         }
@@ -108,7 +108,7 @@
       {
         "text": "Heimlich auf eine Fähre schleichen",
         "description": "Warum bezahlen, wenn es auch umsonst geht?",
-        "values": [0, 8, 8],
+        "values": [0, 5, 5],
         "cost": 0,
         "positive": {
           "result": "Du versteckst dich zwischen in einem Fass voller Fische. Der Geruch stört, aber du wirst nicht entdeckt.",
@@ -126,7 +126,7 @@
       {
         "text": "Eine eigene Fähre bauen und flussaufwärts fahren",
         "description": "Wenn die Hafenarbeiter es können, warum nicht auch du?",
-        "values": [2, 2, 0],
+        "values": [3, 3, 0],
         "cost": 20,
         "positive": {
           "result": "Du schaffst es eine fahrende, wenn auch etwas wackeligen Fähre zu bauen.",
@@ -144,7 +144,7 @@
       {
         "text": "Im Hafen arbeiten",
         "description": "An der frischen Luft zu arbeiten wird deiner Gesundheit und deinem Geldbeutel guttun.",
-        "values": [8, 0, 0],
+        "values": [5, 0, 0],
         "cost": 0,
         "positive": {
           "result": "Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
@@ -189,7 +189,7 @@
       {
         "text": "Eine Ballonfahrt vor der Abreise überfallen",
         "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
-        "values": [8, 8, 0],
+        "values": [5, 4, 0],
         "cost": 0,
         "positive": {
           "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
@@ -207,7 +207,7 @@
       {
         "text": "Die Minenarbeiter um Hilfe bitten",
         "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
-        "values": [4, 2, 6],
+        "values": [3, 2, 4],
         "cost": 0,
         "positive": {
           "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
@@ -225,7 +225,7 @@
       {
         "text": "Im den Minen arbeiten",
         "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
-        "values": [8, 0, 2],
+        "values": [5, 0, 2],
         "cost": 0,
         "positive": {
           "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
@@ -262,7 +262,7 @@
         },
         "negative": {
           "result": "Du zahlst den Wegzoll. Als du etwa die Hälfte der Brücke überquert hast, bricht die Holzplanke, welche dein Gewicht trägt. Du verlierst die Balance und stürzst in die tobenden Strömung unter dir.",
-          "description": "Bei Sonnenaufgang wachst du durchnässt auf einem Tisch im Freien liegend auf. Du befindest dich in West-Zhranorath, dessen Bewohner dich gerettet haben, nachdem dich die Flut landeinwärts trug.",
+          "description": "Bei Sonnenaufgang wachst du durchnässt am Strand liegend auf. Du befindest dich in der Hafenstadt Südstern.",
           "changes": [0, 0, -1],
           "moneyChange": -40
         }
@@ -373,78 +373,114 @@
     "title": "Hafenstadt Südstern",
     "overviewImage": "images/card6_overview.png",
     "image": "images/card6_detail.png",
-    "description": "TODO",
+    "description": "Die Hafenstadt Südstern - florierende Handelsstadt und maritimes Tor zur Graftschaft Itreg.",
     "options": [
       {
-        "text": "TODO",
-        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
-        "values": [0, 0, 2],
-        "cost": 80,
+        "text": "Verlasse die Stadt gen Westen",
+        "description": "Du hälst dich wohl bereit für dein Abenteuer.",
+        "values": [2, 0, 0],
+        "cost": 0,
         "positive": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
+          "result": "Stolzen Fußes machst du dich auf den Weg gen Abenteuer.",
+          "description": "Du verläßt du die Hafenstadt Südstern gen Westen.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Stadt zu verlassen, brichst du vor Erschöpfung zusammen. Du bist zu schwach.",
+          "description": "Du bleibst in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Die Stadt gen Norden verlassen",
+        "description": "Du hälst dich wohl bereit für dein Abenteuer und schätzt den Fährhafen nördlich der Stadt als gute Anlaufstelle ein.",
+        "values": [2, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Stolzen Fußes machst du dich auf den Weg gen Abenteuer.",
+          "description": "Du verläßt du die Hafenstadt Südstern gen Norden.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Beim Versuch die Stadt zu verlassen, brichst du vor Erschöpfung zusammen. Du bist zu schwach.",
+          "description": "Du bleibst in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "In dem Krafthaus der Stadt trainieren",
+        "description": "Etwas Stärke kann dir auf deiner Reise nur guttun.",
+        "values": [0, 0, 0],
+        "cost": 20,
+        "positive": {
+          "result": "Du verbringst den Tag damit, im Krafthaus zu trainieren. Deine Muskeln werden gestärkt.",
+          "description": "Du bleibst gestärkt in der Hafenstadt Südstern.",
+          "changes": [1, 0, 0],
+          "moneyChange": -20
+        },
+        "negative": {
+          "result": "Du verbringst den Tag damit, im Krafthaus zu trainieren. Deine Muskeln werden gestärkt.",
+          "description": "Du bleibst gestärkt in der Hafenstadt Südstern.",
+          "changes": [1, 0, 0],
+          "moneyChange": -20
+        }
+      },
+      {
+        "text": "In der Bibliothek der Stadt lesen",
+        "description": "Etwas Wissen kann dir auf deiner Reise nur guttun.",
+        "values": [0, 0, 0],
+        "cost": 20,
+        "positive": {
+          "result": "Du verbringst den Tag damit, in der Bibliothek zu lesen. Du erwirbst neues Wissen.",
+          "description": "Du bleibst schlauer in der Hafenstadt Südstern.",
+          "changes": [0, 1, 0],
+          "moneyChange": -20
+        },
+        "negative": {
+          "result": "Du verbringst den Tag damit, in der Bibliothek zu lesen. Du erwirbst neues Wissen.",
+          "description": "Du bleibst schlauer in der Hafenstadt Südstern.",
+          "changes": [0, 1, 0],
+          "moneyChange": -20
+        }
+      },
+      {
+        "text": "In einem der Wirtshauser neue Kontakt knüpfen",
+        "description": "Etwas Charme kann dir auf deiner Reise nur guttun.",
+        "values": [0, 0, 0],
+        "cost": 20,
+        "positive": {
+          "result": "Du verbringst den Tag damit, in dem Wirtshaus zu trinken und dich mit verschieden Menschen zu unterhalten. Du wirst charmanter.",
+          "description": "Du bleibst charmanter in der Hafenstadt Südstern.",
           "changes": [0, 0, 1],
-          "moneyChange": -80
+          "moneyChange": -20
         },
         "negative": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
-          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
-          "changes": [-1, 0, -1],
-          "moneyChange": -80
+          "result": "Du verbringst den Tag damit, in dem Wirtshaus zu trinken und dich mit verschieden Menschen zu unterhalten. Du wirst charmanter.",
+          "description": "Du bleibst charmanter in der Hafenstadt Südstern.",
+          "changes": [0, 0, 1],
+          "moneyChange": -20
         }
       },
       {
-        "text": "Eine Ballonfahrt vor der Abreise überfallen",
-        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
-        "values": [8, 8, 0],
+        "text": "In einem der Handwerksbetriebe der Stadt arbeiten",
+        "description": "Etwas Geld kann dir auf deiner Reise nur guttun.",
+        "values": [0, 0, 0],
         "cost": 0,
         "positive": {
-          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": 0
+          "result": "Du verbringst den Tag damit, in einem Handwerksbetrieb zu arbeiten. Am Abend erhälst du deinen Lohn.",
+          "description": "Du bleibst etwas reicher in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": 20
         },
         "negative": {
-          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
-          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
-          "changes": [-1, 0, 0],
-          "moneyChange": 0
-        }
-      },
-      {
-        "text": "Die Minenarbeiter um Hilfe bitten",
-        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
-        "values": [4, 2, 6],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
-          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": -10
-        },
-        "negative": {
-          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
-          "description": "Du bleibst in der Siedlung Razerath.",
-          "changes": [0, 0, -1],
-          "moneyChange": 0
-        }
-      },
-      {
-        "text": "Im den Minen arbeiten",
-        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
-        "values": [8, 0, 2],
-        "cost": 0,
-        "positive": {
-          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
-          "description": "Du bleibst in der Siedlung Razerath.",
-          "changes": [1, 0, 0],
-          "moneyChange": 30
-        },
-        "negative": {
-          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
-          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
-          "changes": [1, 0, 0],
-          "moneyChange": 5
+          "result": "Du verbringst den Tag damit, in einem Handwerksbetrieb zu arbeiten. Am Abend erhälst du deinen Lohn.",
+          "description": "Du bleibst etwas reicher in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": 20
         }
       }
     ]

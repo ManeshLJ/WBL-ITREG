@@ -6,6 +6,7 @@
 - Laufwürfel und Geldwürfel gleichzeitig werfen.
 - Augenzahl des Geldwürfels auf Kontostand addieren.  
   *(Hinweis: Muss später mit Eventkarte verrechnet werden.)*
+- Wenn auf Stoppfeld, darf nicht gezogen werden
 - Entscheiden, ob mit der Augenzahl des Laufwürfels gelaufen oder stehengeblieben wird.
 
 ### Ziehen
@@ -34,7 +35,7 @@ Jeder Spieler trackt die eigene Figur mittels einer Tabelle mit folgenden Spalte
 
 - **Figurlevel**: Startwert 1  
 - **Geld**: Startwert 100  
-- **Fähigkeiten**: Zu Beginn des Spiels dürfen zwei Fähigkeitspunkte verteilt werden:
+- **Fähigkeiten**: 
   - Stärke
   - Wissen
   - Charme
@@ -54,7 +55,7 @@ Jeder Spieler trackt die eigene Figur mittels einer Tabelle mit folgenden Spalte
 5. Entscheide dich für eine Option und teile sie deinen Mitspielern mit.
 6. Würfle mit drei Würfeln:
    - Rot = Stärke
-   - Grün = Wissen
+   - Blau = Wissen
    - Gelb = Charme
 7. Berechne deine Fähigkeitsstärke:
     Fähigkeitsstärke = Fähigkeitspunkte + (Figurlevel × Augenzahl)
@@ -65,3 +66,8 @@ Jeder Spieler trackt die eigene Figur mittels einer Tabelle mit folgenden Spalte
 9. Positioniere deine Figur gemäß Rückseite der Karte.
 10. Notiere Veränderungen für Fähigkeitspunkte und Geld.  
  *(Wichtig: Verrechnen mit Geldwürfel-Ertrag.)*
+
+# Brainstorming
+
+Falls man bei 0 Fähigkeitspunkten, welche verlieren soll, bleibt man bei 0
+Man kann sich immer in die Hafenstadt zurücksetzten - Soll das möglich sein???
