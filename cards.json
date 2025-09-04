@@ -231,7 +231,7 @@
           "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
           "description": "Du bleibst in der Siedlung Razerath.",
           "changes": [1, 0, 0],
-          "moneyChange": 30
+          "moneyChange": 30 
         },
         "negative": {
           "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
@@ -247,7 +247,7 @@
     "title": "Agons Brücke",
     "overviewImage": "images/card4_overview.png",
     "image": "images/card4_detail.png",
-    "description": "Viele Neuankömmling in der Graftschaft Itreg überqueren Agons Brücke, um die legendären Festmale in Racrans Festung zu genießen. Vor der Brücke wird Wegzoll von einem Brückenwächter verlangt.",
+    "description": "Viele Neuankömmling in der Grafschaft Itreg überqueren Agons Brücke, um die legendären Festmale in Racrans Festung zu genießen. Vor der Brücke wird Wegzoll von einem Brückenwächter verlangt.",
     "options": [
       {
         "text": "Den Wegzoll zahlen und die Brücke langsam überqueren",
@@ -292,7 +292,7 @@
     "title": "Racrans Festung",
     "overviewImage": "images/card5_overview.png",
     "image": "images/card5_detail.png",
-    "description": "Racrans Festung stellt die am besten befestigte Burg in der Graftschaft Itreg dar. Einst war sie ein wichtiger taktischer Stützpunkt, seit Beginn der langen Jahre des Friedens vor 324 Jahren, ist sie vorallem bekannst geworden durch ihrer außergewöhlichen Festmähler, aber auch für Gelehrte ist ihre Bibliothek ein Anziehungspunkt.",
+    "description": "Racrans Festung stellt die am besten befestigte Burg in der Grafschaft Itreg dar. Einst war sie ein wichtiger taktischer Stützpunkt, seit Beginn der langen Jahre des Friedens vor 324 Jahren, ist sie vorallem bekannst geworden durch ihrer außergewöhlichen Festmähler, aber auch für Gelehrte ist ihre Bibliothek ein Anziehungspunkt.",
     "options": [
       {
         "text": "Festmahl gegen Eintrittsgeld genießen",
@@ -350,7 +350,7 @@
       },
       {
         "text": "Die Bibliothek besuchen",
-        "description": "Warum nicht dein Wissen in einer der größten Bibliotheken der Graftschaft Itreg erweitern? Die Bibliotheksdiener sind bekannt für ihre strenge Auswahl der Besucher.",
+        "description": "Warum nicht dein Wissen in einer der größten Bibliotheken der Grafschaft Itreg erweitern? Die Bibliotheksdiener sind bekannt für ihre strenge Auswahl der Besucher.",
         "values": [0, 3, 0],
         "cost": 5,
         "positive": {
@@ -373,7 +373,7 @@
     "title": "Hafenstadt Südstern",
     "overviewImage": "images/card6_overview.png",
     "image": "images/card6_detail.png",
-    "description": "Die Hafenstadt Südstern - florierende Handelsstadt und maritimes Tor zur Graftschaft Itreg.",
+    "description": "Die Hafenstadt Südstern - florierende Handelsstadt und maritimes Tor zur Grafschaft Itreg.",
     "options": [
       {
         "text": "Verlasse die Stadt gen Westen",
@@ -724,6 +724,87 @@
           "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
           "changes": [1, 0, 0],
           "moneyChange": 5
+        }
+      }
+    ]
+  },
+{
+    "id": 10,
+    "title": "West-Zhranorath",
+    "overviewImage": "images/card10_overview.png",
+    "image": "images/card10_detail.png",
+    "description": "Der Teil Zhranorath westlich der großen Schlucht, geprägt von Elend, Armut und Hoffnungslosigkeit.",
+    "options": [
+      {
+        "text": "Den Bettlern etwas Geld geben",
+        "description": "Ein bisschen Großzügigkeit kann nie schaden.",
+        "values": [0, 0, 0],
+        "cost": 10,
+        "positive": {
+          "result": "Du gibst einem Bettler etwas Geld. Er bedankt sich.",
+          "description": "Du verlässt West-Zhranorath etwas ärmer gen Osten.",
+          "changes": [0, 0, 0],
+          "moneyChange": -10
+        },
+        "negative": {
+          "result": "Du gibst einem Bettler etwas Geld. Er bedankt sich.",
+          "description": "Du verlässt West-Zhranorath etwas ärmer gen Osten.",
+          "changes": [0, 0, 0],
+          "moneyChange": -10
+        }
+      },
+      {
+        "text": "An einem Boxkampf im Tranko Wirtshaus teilnehmen",
+        "description": "Seit Jahren rühmt sich das Tranko Wirtshaus, die brutalsten Boxkämpfe der Grafschaft. Durch die Zuschauerschaft, bestehend aus Bewohnern der wohlhabenden angrenzenden Siedlung Ost-Zhranorath, sind die Wettgelder und Prämien hoch.",
+        "values": [7, 0, 0],
+        "cost": 5,
+        "positive": {
+          "result": "Du besiegst deinen Gegner, verletzt dich aber dabei.",
+          "description": "Du verlässt West-Zhranorath am nächsten Morgen etwas reicher, aber auch etwas geschwächt gen Osten.",
+          "changes": [-1, 0, 0],
+          "moneyChange": 75
+        },
+        "negative": {
+          "result": "Du wirst von deinem Gegner schwer verletzt und im Anschluss aus dem Wirtshaus geworfen.",
+          "description": "Du verlässt West-Zhranorath am nächsten Morgen etwas ärmer, stark geschwächt und mit verletztem Ego gen Osten.",
+          "changes": [-2, 0, -1],
+          "moneyChange": -5
+        }
+      },
+      {
+        "text": "Im Wirtshaus Tranko Arbeit suchen",
+        "description": "Durch die wohlhabenden Gäste des Wirtshauses, kann es sich einige Mitarbeiter leisten.",
+        "values": [0, 0, 4],
+        "cost": 0,
+        "positive": {
+          "result": "Du kannst den Inhaber überzeugen, dich als Kellner für den Abend einzustellen. Du servierst alkoholische Getränke an reiche Ost-Zhranorather, während sich auf die Schwere der Verletzungen der Kämpfer aus Ost-Zhranorath wetten.",
+          "description": "Am nächsten Morgen, verlässt du West-Zhranorath etwas reicher gen Osten.",
+          "changes": [0, 0, 1],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Du kannst den Inhaber nicht überzeugen, dich als Kellner für den Abend einzustellen.",
+          "description": "Du verlässt du West-Zhranorath gen Osten.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "In der großen Schlucht Schwimmen trainieren",
+        "description": "In West-Zhranorath haben sie kein Krafthaus - die Strömungen der großen Schlucht werden es auch tun.",
+        "values": [5, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du schwimmst eine Stunden in den reißenden Strömungen der großen Schlucht. Deine Muskeln werden gestärkt.",
+          "description": "Du verlässt West-Zhranorath gestärkt gen Osten.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Die Strömungen sind zu stark. Du wirst abgetrieben und schaffst es erst bei Agons Brücke durch eine dort in die Felsen geschlagene Treppe wieder an Land.",
+          "description": "Du befindest dich gestärkt bei Agons Brücke.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
         }
       }
     ]
