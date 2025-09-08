@@ -808,5 +808,86 @@
         }
       }
     ]
+  },
+{
+    "id": 11,
+    "title": "Ost-Zhranorath",
+    "overviewImage": "images/card11_overview.png",
+    "image": "images/card11_detail.png",
+    "description": "Der Teil Zhranorath östlich der großen Schlucht. Durch ihre zentrale Lage, ist diese Siedlung einer der wichtigsten Handelsplätze Itregs.",
+    "options": [
+      {
+        "text": "Am Straßenrand betteln",
+        "description": "Vielleicht sind die Ost-Zhranorather großzügig.",
+        "values": [0, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Nach einigen Minuten fruchtlosem Betteln, wirst du von einer Gruppe jugendlicher Ost-Zhranorather überfallen. Sie bezeichnen dich als dreckigen West-Zhranorather und trage dich über die Brücke zurück nach West-Zhranorath.",
+          "description": "Du befindest dich in West-Zhranorath.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Nach einigen Minuten fruchtlosem Betteln, wirst du von einer Gruppe jugendlicher Ost-Zhranorather überfallen. Sie bezeichnen dich als dreckigen West-Zhranorather und trage dich über die Brücke zurück nach West-Zhranorath.",
+          "description": "Du befindest dich in West-Zhranorath.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Am Markplatz Seide kaufen, um sie in Anschluss teurer weiterzuverkaufen",
+        "description": "Manch Einer verdient so Unmengen Geld.",
+        "values": [0, 0, 5],
+        "cost": 40,
+        "positive": {
+          "result": "Du schaffst es die teure Seide noch teurer weiterzuverkaufen.",
+          "description": "Im Anschluss verlässt du Ost-Zhranorath reicher und charmanter gen Osten.",
+          "changes": [0, 0, 1],
+          "moneyChange": 30
+        },
+        "negative": {
+          "result": "Die Seide zu kaufen ist ein Kinderspiel, sie teuer loszuwerden erweist sich als schwieriger.",
+          "description": "Im Anschluss verlässt du Ost-Zhranorath ärmer gen Osten.",
+          "changes": [0, 0, 0],
+          "moneyChange": -40
+        }
+      },
+      {
+        "text": "Auf einen Boxkampf im Stade de Zhranorath wetten",
+        "description": "Die besten Kämpfer aus West-Zhranorath treten hier gegen einander an. Die Kämpfe bringen Unmengen an Geld ein, die Kämpfer gehen dabei fast leer aus.",
+        "values": [0, 5, 0],
+        "cost": 30,
+        "positive": {
+          "result": "Deine Einschätzung des Kampfes war richtig, du gewinnst eine Menge Geld.",
+          "description": "Am nächsten Morgen, verlässt du Ost-Zhranorath reicher gen Osten.",
+          "changes": [0, 1, 0],
+          "moneyChange": 60
+        },
+        "negative": {
+          "result": "Deine Einschätzung des Kampfes war falsch, du verlierst deinen Einsatz.",
+          "description":  "Am nächsten Morgen, verlässt du Ost-Zhranorath etwas ärmer gen Osten.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Die Bank der Stadt überfallen",
+        "description": "In dieser Geld befinden sich Unmengen an Geld.",
+        "values": [8, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du bedrohst die Bankangestellten mit einer Waffe und forderst sie auf, dir das Geld auszuhändigen. Du schaffst es mit der Beute zu entkommen.",
+          "description": "Du verlässt Ost-Zhranorath deutlich reicher gen Osten.",
+          "changes": [1, 0, 0],
+          "moneyChange": 200
+        },
+        "negative": {
+          "result": "Du bedrohst die Bankangestellten mit einer Waffe und forderst sie auf, dir das Geld auszuhändigen, wirst jedoch von dem Sicherheitespersonal überwältigt und in die große Schlucht geworfen und treibst ab",
+          "description": "Du befindest dich bei Agons Brücke.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        }
+      }
+    ]
   }
 ]
