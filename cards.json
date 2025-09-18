@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Wald",
+    "title": "Ligon Wald",
     "overviewImage": "images/card1_overview.png",
     "image": "images/card1_detail.png",
-    "description": "Du betrittst den Wald. Die Dunkelheit schließt sich langsam um dich mit jedem Meter, den du tiefer eindringst. Plötzlich springt eine Bande Söldner aus dem Unterholz und umzingelt dich. Du wirst überfallen.",
+    "description": "Du betrittst den Ligon Wald. Die Dunkelheit schließt sich langsam um dich mit jedem Meter, den du tiefer eindringst. Plötzlich springt eine Bande Söldner aus dem Unterholz und umzingelt dich. Du wirst überfallen.",
     "options": [
       {
         "text": "Gegen die Söldner kämpfen",
