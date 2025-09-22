@@ -892,7 +892,7 @@
   },
 {
     "id": 12,
-    "title": "Ost-Zhranorath",
+    "title": "Gefängnis",
     "overviewImage": "images/card12_overview.png",
     "image": "images/card12_detail.png",
     "description": "Der Teil Zhranorath östlich der großen Schlucht. Durch ihre zentrale Lage, ist diese Siedlung einer der wichtigsten Handelsplätze Itregs.",
@@ -967,6 +967,195 @@
           "description": "Du befindest dich bei Agons Brücke.",
           "changes": [1, 0, 0],
           "moneyChange": 0
+        }
+      }
+    ]
+  },
+{
+    "id": 13,
+    "title": "Helarons Friedhof",
+    "overviewImage": "images/card13_overview.png",
+    "image": "images/card13_detail.png",
+    "description": "Als der 53-jährige Krieg vor 324 Jahren durch General Helarons Truppen gewonnen wurde, bestattete die neugegründete Graftschaft Itreg Zehntausenden Leichnahme der gefallenen Soldaten gesammelt auf einem Friedhof. Dieser ist heute nach Helaron benannt und Ost-Zhranorath für dessen Verwaltung zuständig. Du siehst einen Grabräuber, welcher Grab um Grab öffnet und durchsucht.",
+    "options": [
+      {
+        "text": "Einfach Weitergehen",
+        "description": "Du bist den Opfern eines jahrhundertealtem Krieg schließlich nicht verpflichtet.",
+        "values": [0, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        },
+        "negative": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber zur Rede stellen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Davon muss du ihn überzeugen.",
+        "values": [0, 0, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es, den Grabräuber zu überzeugen, dass sein Handeln unmoralisch ist. Er erwidert jedoch, dass er im Auftrag des Stadthalters von Azelon Stadt handelt, und dieser Ost-Zhranorath bezahlt, dass diese das Aquirieren und Transportieren von Wertgegenständen Toter Soldaten dulden.",
+          "description": "Du verlässt den Friedhof etwas geschockt, aber schlauer und charmanter gen Norden.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Dein Argumentation ist nicht überzeugend. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber stellen und zusammenschlagen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Es muss bestraft werden.",
+        "values": [6, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du verletzt den Grabräuber schwer und bringst seinen ohnmächtigen Körper anschließend nach Ost-Zhranorath, wo du ihn der Stadtwache übergibst. Diese erklären dir jedoch, dass Ost-Zhranorath seit geraumer Zeit, Grabräuberrechte verkauft und dieser Räuber im Auftrag des Stadthalters von Azelon Stadt handelt.",
+          "description": "Du befindest dich stäker in Ost-Zhranorath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Du bist zu schwach. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      }
+    ]
+  },
+{
+    "id": 14,
+    "title": "Verlassene Ruinen Lilouths",
+    "overviewImage": "images/card14_overview.png",
+    "image": "images/card14_detail.png",
+    "description": "Lilouth war einst eine florierende Siedlung östlich des großen Sees, bis sie während dem 53-jährigen durch eine Drachen vor dem Auschluss dieser Spezies aus dem Konflikt komplett niedergebrannt wurde. Heute stehen nur noch Ruinen, die als verflucht gelten und daher nicht betreten werden.",
+    "options": [
+      {
+        "text": "Einfach Weitergehen",
+        "description": "Du bist den Opfern eines jahrhundertealtem Krieg schließlich nicht verpflichtet.",
+        "values": [0, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        },
+        "negative": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber zur Rede stellen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Davon muss du ihn überzeugen.",
+        "values": [0, 0, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es, den Grabräuber zu überzeugen, dass sein Handeln unmoralisch ist. Er erwidert jedoch, dass er im Auftrag des Stadthalters von Azelon Stadt handelt, und dieser Ost-Zhranorath bezahlt, dass diese das Aquirieren und Transportieren von Wertgegenständen Toter Soldaten dulden.",
+          "description": "Du verlässt den Friedhof etwas geschockt, aber schlauer und charmanter gen Norden.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Dein Argumentation ist nicht überzeugend. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber stellen und zusammenschlagen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Es muss bestraft werden.",
+        "values": [6, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du verletzt den Grabräuber schwer und bringst seinen ohnmächtigen Körper anschließend nach Ost-Zhranorath, wo du ihn der Stadtwache übergibst. Diese erklären dir jedoch, dass Ost-Zhranorath seit geraumer Zeit, Grabräuberrechte verkauft und dieser Räuber im Auftrag des Stadthalters von Azelon Stadt handelt.",
+          "description": "Du befindest dich stäker in Ost-Zhranorath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Du bist zu schwach. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      }
+    ]
+  },
+{
+    "id": 15,
+    "title": "Drachenhöhle",
+    "overviewImage": "images/card15_overview.png",
+    "image": "images/card15_detail.png",
+    "description": "Lilouth war einst eine florierende Siedlung östlich des großen Sees, bis sie während dem 53-jährigen durch eine Drachen vor dem Auschluss dieser Spezies aus dem Konflikt komplett niedergebrannt wurde. Heute stehen nur noch Ruinen, die als verflucht gelten und daher nicht betreten werden.",
+    "options": [
+      {
+        "text": "Einfach Weitergehen",
+        "description": "Du bist den Opfern eines jahrhundertealtem Krieg schließlich nicht verpflichtet.",
+        "values": [0, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        },
+        "negative": {
+          "result": "Nach einigen Minuten wird dein Abgang unsaft durch ein Schlag gegen den Hinterkopf unterbrochen. Der Grabräuber ist dir gefolgt und raubt dich nun aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber zur Rede stellen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Davon muss du ihn überzeugen.",
+        "values": [0, 0, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Du schaffst es, den Grabräuber zu überzeugen, dass sein Handeln unmoralisch ist. Er erwidert jedoch, dass er im Auftrag des Stadthalters von Azelon Stadt handelt, und dieser Ost-Zhranorath bezahlt, dass diese das Aquirieren und Transportieren von Wertgegenständen Toter Soldaten dulden.",
+          "description": "Du verlässt den Friedhof etwas geschockt, aber schlauer und charmanter gen Norden.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Dein Argumentation ist nicht überzeugend. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
+        }
+      },
+      {
+        "text": "Den Grabräuber stellen und zusammenschlagen",
+        "description": "Ein solches Verhalten ist unnannehmbar. Es muss bestraft werden.",
+        "values": [6, 0, 0],
+        "cost": 0,
+        "positive": {
+          "result": "Du verletzt den Grabräuber schwer und bringst seinen ohnmächtigen Körper anschließend nach Ost-Zhranorath, wo du ihn der Stadtwache übergibst. Diese erklären dir jedoch, dass Ost-Zhranorath seit geraumer Zeit, Grabräuberrechte verkauft und dieser Räuber im Auftrag des Stadthalters von Azelon Stadt handelt.",
+          "description": "Du befindest dich stäker in Ost-Zhranorath.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Du bist zu schwach. Der Grabräuber schlägt dich nieder und raubt dich aus. Du rennst panisch nach Süden bis du wieder die Hafenstadt erreichst, er konnte dir jedoch Geld abnehmen.",
+          "description": "Du befindest dich in der Hafenstadt Südstern.",
+          "changes": [0, 0, 0],
+          "moneyChange": -30
         }
       }
     ]
