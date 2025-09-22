@@ -94,13 +94,13 @@
         "cost": 80,
         "positive": {
           "result": "Nachdem du ein hübsches Sümmchen bezahlt hast, wirst du auf eine Fähre gebracht, die dich flussaufwärts bringt.",
-          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der Hdrathur Brücke.",
           "changes": [0, 0, 0],
           "moneyChange": -80
         },
         "negative": {
           "result": "Nachdem du ein hübsches Sümmchen bezahlt hast, wirst du auf eine Fähre gebracht, die dich flussaufwärts bringt.",
-          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "description": "Nach einer entspannten eintägigen Fahrt erreichst du den Fährenhafen an der Hdrathur Brücke.",
           "changes": [0, 0, 0],
           "moneyChange": -80
         }
@@ -112,7 +112,7 @@
         "cost": 0,
         "positive": {
           "result": "Du versteckst dich zwischen in einem Fass voller Fische. Der Geruch stört, aber du wirst nicht entdeckt.",
-          "description": "Nach einer geruchsintensiven eintägigen Fahrt erreichst du den Fährenhafen an der ### Brücke.",
+          "description": "Nach einer geruchsintensiven eintägigen Fahrt erreichst du den Fährenhafen an der Hdrathur Brücke.",
           "changes": [0, 1, 1],
           "moneyChange": 0
         },
@@ -490,78 +490,60 @@
     "title": "Tempel der Erleuchtung",
     "overviewImage": "images/card7_overview.png",
     "image": "images/card7_detail.png",
-    "description": "TODO",
+    "description": "Eines der wenigen Gebäude der Graftschaft, welches bereits vor dem 53-jährigen Krieg errichtet wurde. Während diesem Krieg löste die Heretik die Zrenith-Religion als dominanten Glaubenseinstellung in Itreg ab, jedoch sind die Zrenither weiterhin aktiv. Der Tempel der Erleuchtung gilt als Wahlfahrtort für diese zölibatären und gegenüber Außenstehenden stummen Gläubigen.",
     "options": [
       {
-        "text": "TODO",
-        "description": "Eine teurer Angelegenheit - aber sehr sicher, da die Gemeinde bereits vor einigen Jahren begann für touristische Zwecke Ballonfahrten anzubieten.",
-        "values": [0, 0, 2],
-        "cost": 80,
+        "text": "Für Einlass bezahlen, um zu meditieren",
+        "description": "Eine teurer Angelegenheit - aber Meditation gerade in diesem Tempel kann zu Erleuchtung führen.",
+        "values": [0, 0, 0],
+        "cost": 50,
         "positive": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees und konntest im beengten Ballonkorb neue Kontakte mit Mitreisenden knüpfen.",
-          "changes": [0, 0, 1],
-          "moneyChange": -80
-        },
-        "negative": {
-          "result": "Diese Geldsumme hat sich wirklich gelohnt. Die Aussicht ist atemberaubend, aber du streitest mit den Mitreisenden, die dich aus dem Ballonkorb werfen.",
-          "description": "Nach langer Ohnmacht wachst du in Siedlung Razerath auf, geschwächt und ärmer. Wie du überlebt hast, ist dir ein Rätsel.",
-          "changes": [-1, 0, -1],
-          "moneyChange": -80
-        }
-      },
-      {
-        "text": "Eine Ballonfahrt vor der Abreise überfallen",
-        "description": "Warum bezahlen, wenn man die Crew zwingen kann einen über das Gebirge zu bringen?",
-        "values": [8, 8, 0],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es eine Balloncrew zu überfallen und sie zu zwingen, dich über die Ligon Berge zu bringen.",
-          "description": "Du erreichst die Binuoth Siedlung westlich des großen Sees gestärkt und schlauer.",
-          "changes": [1, 1, 0],
+          "result": "Der Gläubige an der Tür lässt dich eintreten, lehnt dein Geld ab ohne ein Wort zu sagen. Du meditierst im Tempel und erlangst Erkenntnis",
+          "description": "Am nächsten Tag, reist du mit einer Gruppe Mönche, welche in deiner Anwesenheit nicht sprechen, zu Ritanas Ödland.",
+          "changes": [0, 1, 1],
           "moneyChange": 0
         },
         "negative": {
-          "result": "Beim Versuch die Balloncrew zu überfallen, wirst du überwältigt und zu quälender Arbeit in den Minen verurteilt.",
-          "description": "Nach einer Woche harter Arbeit, wirst du in der Siedlung Razerath geschwächt entlassen.",
+          "result": "Der Gläubige an der Tür lässt dich eintreten, lehnt dein Geld ab ohne ein Wort zu sagen. Du meditierst im Tempel und erlangst Erkenntnis",
+          "description": "Am nächsten Tag, reist du mit einer Gruppe Mönche, welche in deiner Anwesenheit nicht sprechen, zu Ritanas Ödland.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Um Einlass bitten, um zu meditieren",
+        "description": "Angeblich sind die Zrenither sehr gastfreundlich und helfen auch gerne ohne geldliche Gegenleistung.",
+        "values": [0, 0, 6],
+        "cost": 0,
+        "positive": {
+          "result": "Der Gläubige an der Tür lässt dich eintreten ohne ein Wort zu sagen. Du meditierst im Tempel und erlangst Erkenntnis",
+          "description": "Am nächsten Tag, reist du mit einer Gruppe Mönche, welche in deiner Anwesenheit nicht sprechen, zum Fährhafen an der Hdrathur Brücke.",
+          "changes": [0, 1, 1],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Der Mönch gibt dir zu verstehen, dass dein Betrage unwürdig ist, um den Temple zu betreten, ohne ein Wort zu sagen. Er verwehrt dir den Zutritt. Du schläfst vor dem Tempel.",
+          "description": "Am nächsten Tag, reist du mit einer Gruppe Mönche, welche in deiner Anwesenheit nicht sprechen, zum Fährhafen an der Hdrathur Brücke.",
+          "changes": [0, 0, 0],
+          "moneyChange": 0
+        }
+      },
+      {
+        "text": "Für Einlass bezahlen und spionieren",
+        "description": "In dem oberen Stockwerk des Tempels, soll der hohe Rat der Zrenither tage. Vielleicht kannst du etwas Interessantes über diese nach Außen stummen Gläubigen herausfinden.",
+        "values": [5, 0, 0],
+        "cost": 50,
+        "positive": {
+          "result": "Der Gläubige an der Tür lässt dich eintreten, lehnt dein Geld ab ohne ein Wort zu sagen. Du kannst belauschen, wie der hohe Rat darüber berät, wie sie ihren Einfluss über Azelon erhöhen können. Du wirst nicht erwischt.",
+          "description": "Am nächsten Tag, reist du mit einer Gruppe Mönche, welche in deiner Anwesenheit nicht sprechen, zum Fährhafen an der Hdrathur Brücke.",
+          "changes": [1, 0, 0],
+          "moneyChange": 0
+        },
+        "negative": {
+          "result": "Der Gläubige an der Tür lässt dich eintreten, lehnt dein Geld ab ohne ein Wort zu sagen. Du kannst belauschen, wie der hohe Rat darüber berät, wie sie ihren Einfluss über Azelon erhöhen können. Du wirst erwischt und wirst von der Klippe ins Meer geworfen.",
+          "description": "Du wirst geschwächt in der Hafenstadt wieder angespült.",
           "changes": [-1, 0, 0],
           "moneyChange": 0
-        }
-      },
-      {
-        "text": "Die Minenarbeiter um Hilfe bitten",
-        "description": "Warum über die Berge, wenn man auch unter ihnen durch kann?",
-        "values": [4, 2, 6],
-        "cost": 0,
-        "positive": {
-          "result": "Du schaffst es die Minenarbeiter zu überzeugen, wenn du ihnen bei der Arbeit hilfst und eine kleine Geldsumme gibst, dich durch die Minen zu bringen",
-          "description": "Nach einer anstrengenden eintägigen Fahrt erreichst du die Binuoth Siedlung westlich des großen Sees, gestärkt und schlauer.",
-          "changes": [1, 1, 0],
-          "moneyChange": -10
-        },
-        "negative": {
-          "result": "Die Minenarbeiter lachen dich aus, sie können ein Schwächling wie dich nicht in ihren Lohen gebrauchen.",
-          "description": "Du bleibst in der Siedlung Razerath.",
-          "changes": [0, 0, -1],
-          "moneyChange": 0
-        }
-      },
-      {
-        "text": "Im den Minen arbeiten",
-        "description": "Warum nicht etwas Geld verdienen, du bist etwas knapp bei Kasse.",
-        "values": [8, 0, 2],
-        "cost": 0,
-        "positive": {
-          "result": "Du kannst die Minenarbeiter überzeugen dich mitarbeiten zu lassen. Nach einigen Tagen harter Arbeit, erhälst du deine Lohn.",
-          "description": "Du bleibst in der Siedlung Razerath.",
-          "changes": [1, 0, 0],
-          "moneyChange": 30
-        },
-        "negative": {
-          "result": "Nach einigen Tagen harter Arbeit, wirst du gefeuert, du warst zu schwach.",
-          "description": "Da ihr euch aktuell im Norden der Berge befindet, wirst du gestärkt an der Siedlung Binuoth westlichen des großen Sees abgesetzt.",
-          "changes": [1, 0, 0],
-          "moneyChange": 5
         }
       }
     ]
@@ -999,7 +981,7 @@
       {
         "text": "Den Grabräuber zur Rede stellen",
         "description": "Ein solches Verhalten ist unnannehmbar. Davon muss du ihn überzeugen.",
-        "values": [0, 0, 6],
+        "values": [0, 0, 5],
         "cost": 0,
         "positive": {
           "result": "Du schaffst es, den Grabräuber zu überzeugen, dass sein Handeln unmoralisch ist. Er erwidert jedoch, dass er im Auftrag des Stadthalters von Azelon Stadt handelt, und dieser Ost-Zhranorath bezahlt, dass diese das Aquirieren und Transportieren von Wertgegenständen Toter Soldaten dulden.",
@@ -1017,7 +999,7 @@
       {
         "text": "Den Grabräuber stellen und zusammenschlagen",
         "description": "Ein solches Verhalten ist unnannehmbar. Es muss bestraft werden.",
-        "values": [6, 0, 0],
+        "values": [5, 0, 0],
         "cost": 0,
         "positive": {
           "result": "Du verletzt den Grabräuber schwer und bringst seinen ohnmächtigen Körper anschließend nach Ost-Zhranorath, wo du ihn der Stadtwache übergibst. Diese erklären dir jedoch, dass Ost-Zhranorath seit geraumer Zeit, Grabräuberrechte verkauft und dieser Räuber im Auftrag des Stadthalters von Azelon Stadt handelt.",
@@ -1042,7 +1024,7 @@
     "description": "Lilouth war einst eine florierende Siedlung östlich des großen Sees, bis sie während dem 53-jährigen durch eine Drachen vor dem Auschluss dieser Spezies aus dem Konflikt komplett niedergebrannt wurde. Heute stehen nur noch Ruinen, die als verflucht gelten und daher nicht betreten werden.",
     "options": [
       {
-        "text": "Einfach Weitergehen",
+        "text": "TODO: hier viel Punkte als ausgleich zum Tempel",
         "description": "Du bist den Opfern eines jahrhundertealtem Krieg schließlich nicht verpflichtet.",
         "values": [0, 0, 0],
         "cost": 0,
@@ -1102,7 +1084,7 @@
     "title": "Drachenhöhle",
     "overviewImage": "images/card15_overview.png",
     "image": "images/card15_detail.png",
-    "description": "Lilouth war einst eine florierende Siedlung östlich des großen Sees, bis sie während dem 53-jährigen durch eine Drachen vor dem Auschluss dieser Spezies aus dem Konflikt komplett niedergebrannt wurde. Heute stehen nur noch Ruinen, die als verflucht gelten und daher nicht betreten werden.",
+    "description": "Du betrittst die Höhle des Drachen, welcher sich vor einigen Jahrhunderten dur",
     "options": [
       {
         "text": "Einfach Weitergehen",
